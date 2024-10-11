@@ -81,14 +81,14 @@ def validate_repo(repo_name):
 
     jsonl_files_with_seed = [
         f"selected_humanevalpack_{seed_value}.jsonl",
-        f"task_2_predict_{seed_value}.jsonl",
-        f"task_2_localize_{seed_value}.jsonl",
+        f"task_2_{seed_value}_vanilla.jsonl",
+        f"task_2_{seed_value}_crafted.jsonl",
     ]
 
     required_files = [
         "task_2.py",
-        "task_2_predict.log",
-        "task_2_localize.log",
+        "task_2_vanilla.log",
+        "task_2_crafted.log",
     ]
 
     all_required_files = required_files + jsonl_files_with_seed
@@ -137,8 +137,8 @@ def validate_jsonl_files(repo_name):
 
     jsonl_files_with_seed = [
         f"selected_humanevalpack_{seed_value}.jsonl",
-        f"task_2_predict_{seed_value}.jsonl",
-        f"task_2_localize_{seed_value}.jsonl",
+        f"task_2_{seed_value}_vanilla.jsonl",
+        f"task_2_{seed_value}_crafted.jsonl",
     ]
 
     for file in jsonl_files_with_seed:
