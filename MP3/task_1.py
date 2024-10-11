@@ -54,7 +54,7 @@ if __name__ == '__main__':
     '''
     This Python script is to run prompt LLMs for code synthesis.
     Usage:
-    `python3 task1.py <input_dataset> <output_file> `|& tee prompt.log
+    `python3 task1.py <input_dataset> <output_file> `|& tee task_1.log
 
     Inputs:
     - <input_dataset>: A `.jsonl` file, which should be your team's dataset containing 20 HumanEval problems.
